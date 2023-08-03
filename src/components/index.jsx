@@ -9,6 +9,7 @@ import AppNav from "./AppNav/AppNav";
 import PageNav from "./PageNav/PageNav";
 import Sidebar from "./Sidebar/Sidebar";
 import Map from "./Map/Map";
+import CityList from "./CityList/CityList";
 
 export {
   AppNav,
@@ -22,4 +23,5 @@ export {
   PageNav,
   Sidebar,
   Map,
+  CityList,
 };
