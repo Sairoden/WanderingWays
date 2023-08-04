@@ -13,7 +13,7 @@ import {
 } from "./pages";
 
 // Components
-import { CityList } from "./components";
+import { CityList, CountryList, City } from "./components";
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -56,7 +56,11 @@ function App() {
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="countries" element={<h1>COUNTRIES COMPONENT</h1>} />
+          <Route
+            path="countries"
+            element={<CountryList cities={cities} isLoading={isLoading} />}
+          />
+          <Route path="cities/:id" element={<City />} />
           <Route path="form" element={<h1>FORM COMPONENT</h1>} />
         </Route>
         <Route path="*" element={<NotFound />} />
@@ -67,4 +71,4 @@ function App() {
 
 export default App;
 
-// 8 ka na
+// 14 ka na
