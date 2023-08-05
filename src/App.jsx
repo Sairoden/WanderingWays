@@ -13,7 +13,7 @@ import {
 } from "./pages";
 
 // Components
-import { CityList, CountryList, City } from "./components";
+import { CityList, CountryList, City, Form } from "./components";
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -61,7 +61,7 @@ function App() {
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
           <Route path="cities/:id" element={<City />} />
-          <Route path="form" element={<h1>FORM COMPONENT</h1>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

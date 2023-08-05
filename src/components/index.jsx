@@ -11,6 +11,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Map from "./Map/Map";
 import CityList from "./CityList/CityList";
 import CountryList from "./CountryList/CountryList";
+import Button from "./Button/Button";
 
 export {
   AppNav,
@@ -26,4 +27,5 @@ export {
   Map,
   CityList,
   CountryList,
+  Button,
 };
