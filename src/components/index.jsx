@@ -12,6 +12,7 @@ import Map from "./Map/Map";
 import CityList from "./CityList/CityList";
 import CountryList from "./CountryList/CountryList";
 import Button from "./Button/Button";
+import BackButton from "./BackButton/BackButton";
 
 export {
   AppNav,
@@ -28,4 +29,5 @@ export {
   CityList,
   CountryList,
   Button,
+  BackButton,
 };
