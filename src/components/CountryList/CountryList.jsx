@@ -6,7 +6,12 @@ import Spinner from "../Spinner/Spinner";
 import CountryItem from "../CountryItem/CountryItem";
 import Message from "../Message/Message";
 
-export default function CountryList({ cities, isLoading }) {
+// Contexts
+import { useCitiesContext } from "../../contexts/cities_context";
+
+export default function CountryList() {
+  const { cities, isLoading } = useCitiesContext();
+
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
