@@ -37,4 +37,4 @@ function App() {
 
 export default App;
 
-// 17 ka na
+// 13 ka na
