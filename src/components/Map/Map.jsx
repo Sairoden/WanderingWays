@@ -16,12 +16,21 @@ import styles from "./Map.module.css";
 // Contexts
 import { useCitiesContext } from "../../contexts/cities_context";
 
+// Hooks
+import { useGeolocation } from "../../hooks";
+
+// Components
+import { Button } from "../index";
+
 export default function Map() {
-  const [mapPosition, setMapPosition] = useState([40, 0]);
-
-  const [searchParams, setSearchParams] = useSearchParams();
-
   const { cities } = useCitiesContext();
+  const [mapPosition, setMapPosition] = useState([40, 0]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const {
+    isLoading: isLoadingPosition,
+    position: geoLocationPosition,
+    getPosition,
+  } = useGeolocation();
 
   const mapLat = searchParams.get("lat");
   const mapLng = searchParams.get("lng");
@@ -30,8 +39,18 @@ export default function Map() {
     if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
   }, [mapLat, mapLng]);
 
+  useEffect(() => {
+    if (geoLocationPosition)
+      setMapPosition([geoLocationPosition.lat, geoLocationPosition.lng]);
+  }, [geoLocationPosition]);
+
   return (
     <div className={styles.mapContainer}>
+      {!geoLocationPosition && (
+        <Button type="position" onClick={getPosition}>
+          {isLoadingPosition ? "Loading..." : "Use your position"}
+        </Button>
+      )}
       <MapContainer
         center={mapPosition}
         zoom={6}
