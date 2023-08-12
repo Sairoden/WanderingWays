@@ -73,18 +73,6 @@
       "id": 98443206
     },
     {
-      "cityName": "Unna",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2023-08-11T07:58:47.084Z",
-      "notes": "",
-      "position": {
-        "lat": "51.56341232867588",
-        "lng": "7.668457031250001"
-      },
-      "id": 98443207
-    },
-    {
       "cityName": "Hermeskeil",
       "country": "Germany",
       "emoji": "🇩🇪",
@@ -95,18 +83,6 @@
         "lng": "6.943359375000001"
       },
       "id": 98443208
-    },
-    {
-      "cityName": "Les Maillys",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-08-11T07:58:47.084Z",
-      "notes": "",
-      "position": {
-        "lat": "47.12995075666307",
-        "lng": "5.3173828125"
-      },
-      "id": 98443209
     },
     {
       "cityName": "Gentioux-Pigerolles",
@@ -131,18 +107,6 @@
         "lng": "20.566406250000004"
       },
       "id": 98443211
-    },
-    {
-      "cityName": "San Manuel",
-      "country": "Philippines (the)",
-      "emoji": "🇵🇭",
-      "date": "2023-08-11T08:01:24.091Z",
-      "notes": "",
-      "position": {
-        "lat": "17.07778960654538",
-        "lng": "121.64062500000001"
-      },
-      "id": 98443212
     }
   ]
 }
