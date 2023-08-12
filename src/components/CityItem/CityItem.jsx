@@ -8,7 +8,7 @@ import styles from "./CityItem.module.css";
 import { useCitiesContext } from "../../contexts/cities_context";
 
 export default function CityItem({ city }) {
-  const { currentCity } = useCitiesContext();
+  const { currentCity, deleteCity } = useCitiesContext();
   const { emoji, cityName, date, id, position } = city;
 
   const formatDate = date =>
@@ -18,6 +18,11 @@ export default function CityItem({ city }) {
       year: "numeric",
       weekday: "long",
     }).format(new Date(date));
+
+  function handleDelete(e) {
+    e.preventDefault();
+    deleteCity(id);
+  }
 
   return (
     <li>
@@ -30,7 +35,9 @@ export default function CityItem({ city }) {
         <span className={styles.emoji}>{emoji}</span>
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}>{formatDate(date)}</time>
-        <button className={styles.deleteBtn}>&times;</button>
+        <button className={styles.deleteBtn} onClick={handleDelete}>
+          &times;
+        </button>
       </Link>
     </li>
   );

@@ -1,3 +1,4 @@
 import useGeolocation from "./useGeolocation";
+import useUrlPosition from "./useUrlPosition";
 
-export { useGeolocation };
+export { useGeolocation, useUrlPosition };
