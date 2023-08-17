@@ -74,6 +74,8 @@ function Form() {
 
     if (!cityName || !date) return;
 
+    console.log(date);
+
     const newCity = {
       cityName,
       country,

@@ -37,30 +37,6 @@
       "id": 98443197
     },
     {
-      "cityName": "Villaines-la-Juhel",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-08-11T07:51:50.670Z",
-      "notes": "It was really fun!",
-      "position": {
-        "lat": "48.3416461723746",
-        "lng": "-0.30761718750000006"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Hassi R’mel",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2023-08-11T07:54:56.517Z",
-      "notes": "",
-      "position": {
-        "lat": "32.99023555965106",
-        "lng": "2.9003906250000004"
-      },
-      "id": 98443200
-    },
-    {
       "cityName": "Breitenbrunn",
       "country": "Germany",
       "emoji": "🇩🇪",
@@ -85,28 +61,40 @@
       "id": 98443208
     },
     {
-      "cityName": "Gentioux-Pigerolles",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-08-11T08:00:15.165Z",
+      "cityName": "La Roda",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-12T08:52:14.107Z",
       "notes": "",
       "position": {
-        "lat": "45.75219336063106",
-        "lng": "2.1093750000000004"
+        "lat": "39.19820534889482",
+        "lng": "-2.2192382812500004"
       },
-      "id": 98443210
+      "id": 98443213
     },
     {
-      "cityName": "Kraljevo",
-      "country": "Serbia",
-      "emoji": "🇷🇸",
-      "date": "2023-08-11T08:01:09.106Z",
+      "cityName": "Palazuelos de Muno",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-12T08:52:30.261Z",
       "notes": "",
       "position": {
-        "lat": "43.67581809328341",
-        "lng": "20.566406250000004"
+        "lat": "42.17968819665963",
+        "lng": "-3.9770507812500004"
       },
-      "id": 98443211
+      "id": 98443214
+    },
+    {
+      "cityName": "Los Santos",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-08-12T08:52:33.573Z",
+      "notes": "",
+      "position": {
+        "lat": "40.56389453066509",
+        "lng": "-5.800781250000001"
+      },
+      "id": 98443215
     }
   ]
 }
