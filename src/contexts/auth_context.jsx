@@ -13,7 +13,7 @@ function authReducer(state, action) {
       return { ...state, user: action.payload, isAuthenticated: true };
 
     case "LOGOUT":
-      return { ...state, initialState };
+      return { ...state, user: null, isAuthenticated: false };
 
     default:
       throw new Error("Unknown action type");
